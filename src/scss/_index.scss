@@ -1,0 +1,159 @@
+body {
+    font-family: $font-light;
+    background-color: #ffffff;
+}
+
+// If navbar is magenta, change the links into white
+.navbar-custom {
+    background-color: $color-primary;
+
+    ul li a {
+        color: #ffffff;
+    }
+
+    .navbar-toggler {
+        color: #fff;
+        font-size: 2em;
+    }
+    a.nav-link {
+        border-bottom: 2px dotted transparent;
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    a.nav-link:hover {
+        border-bottom: 2px dotted white;
+    }
+}
+
+.navbar-custom-white {
+
+    ul li a {
+        color: #000000;
+    }
+
+    .navbar-toggler {
+        color: #000000;
+        font-size: 2em;
+    }
+    a.nav-link {
+        border-bottom: 2px dotted transparent;
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    a.nav-link:hover {
+        border-bottom: 2px dotted #000000;
+    }
+}
+
+.navbar {
+    padding-top: 2rem;
+    font-family: $font-bold;
+    letter-spacing: 0.15rem;
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 0;
+    margin: 0.5rem 0 0 0;
+
+    @include media-breakpoint-up(lg) {
+        margin: 0 0 0 2.5rem;
+    }
+}
+
+.logo {
+    max-height: 50px;
+}
+
+
+header {
+    padding: 3rem 0;
+    background-color: $color-primary;
+    font-family: $font-black;
+
+    @include media-breakpoint-up(lg) {
+        padding: 7rem 0;
+    }
+
+    .headline {
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 1.1;
+        letter-spacing: 0.6rem;
+        text-transform: uppercase;
+        color: #ffffff;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 7rem;
+        }
+
+        span {
+            display: block;
+        }
+    }
+}
+
+// Content
+
+.introduction {
+    margin: 6rem 0;
+    font-family: $font-light;
+
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .main-txt {
+        margin-bottom: 4rem;
+    }
+    .sub-txt {
+        margin-top: 4rem;
+    }
+
+    .slider-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer {
+    background-color: $color-footer;
+    color: #ffffff;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+
+        i {
+            color: $color-pale;
+            font-size: 2rem;
+            margin: 0 0.5rem;
+            transition: 0.3s;
+
+        }
+
+        i:hover {
+            color: $color-primary;
+        }
+    }
+
+    p {
+        margin-top: 1rem;
+        color: $color-pale;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+}
+
+
+

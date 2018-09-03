@@ -1,0 +1,151 @@
+.service {
+    margin: 6rem 0 4rem 0;
+
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        text-align: center;
+        // border-bottom: 3px solid $color-primary;
+        // display: inline-block;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+        }
+    }
+
+    &-pic {
+        width: 15rem;
+        height: auto;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 0;
+        }
+    }
+
+    &-text {
+        h4 {
+            font-family: $font-black;
+            text-transform: uppercase;
+            font-size: 2rem;
+            text-align: center;
+
+            @include media-breakpoint-up(lg) {
+                text-align: left;
+            }
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    .service-item {
+        margin-bottom: 4rem;
+    }
+}
+
+.clients {
+    background-color: $color-footer;
+    padding: 4rem 7rem;
+
+    @include media-breakpoint-up(md) {
+        padding: 4rem 2rem;
+    }
+
+
+    h2 {
+        margin: 0 0 4rem 0;
+        color: $color-clients;
+        // font-family: $font-light;
+        text-align: center;
+        font-size: 3.5rem;
+    }
+}
+
+.collective {
+    margin: 6rem 0;
+
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 4rem;
+        text-align: center;
+
+        @include media-breakpoint-up(lg) {
+            text-align: left;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    &-pic {
+        width: 20rem;
+        height: auto;
+
+        @include media-breakpoint-up(lg) {
+            width: 25rem;
+        }
+    }
+
+    &-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        h6 {
+            font-family: $font-bold;
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin-top: 1rem;
+            text-align: center;
+
+            @include media-breakpoint-up(lg) {
+                margin-top: 0;
+                text-align: left;
+            }
+        }
+
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            font-family: $font-bold;
+            align-self: flex-start;
+
+
+            &:hover {
+                border-bottom: 3px dotted $color-primary;
+            }
+        }
+
+    }
+
+    &-item {
+        margin-bottom: 7rem;
+
+        @include media-breakpoint-up(lg) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    .contact {
+        margin-top: 8rem;
+
+
+        a {
+            color: #000000;
+            text-decoration: none;
+            border-bottom: 3px solid transparent;
+            font-family: $font-bold;
+
+            &:hover {
+                border-bottom: 3px dotted $color-primary;
+            }
+        }
+
+    }
+
+}
+
