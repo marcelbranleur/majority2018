@@ -133,7 +133,6 @@
         &--11 {
             grid-column: 1 / -1;
             // grid-row: 13 / 16;
-            background-color: pink;
 
             @include media-breakpoint-up(md) {
                 grid-column: 9 / -1;

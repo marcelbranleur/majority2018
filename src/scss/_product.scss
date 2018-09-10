@@ -64,63 +64,150 @@
     background-size: cover;
 
     &--1 {
-        background-image: url('../img/transhalsan/transhalsan_sticker.png');
+        background-image: url('../img/Mobile-versions/transhalsan_sticker_sm.png');
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/transhalsan_sticker_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/transhalsan/transhalsan_sticker.png');
+            }
     }
 
     &--2 {
-        background-image: url('../img/qrab/qrab_logo.png');
+        background-image: url('../img/Mobile-versions/qrab_logo_sm.png');
 
-        @include media-breakpoint-up(lg) {
-            height: 35rem;
-        }
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/qrab_logo_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/qrab/qrab_logo.png');
+                height: 35rem;
+            }
     }
 
     &--3 {
-        background-image: url('../img/Jula-kem/tvattmedel_samling.png');
+        background-image: url('../img/Mobile-versions/tvattmedel_samling_sm.png');
+        height: 10rem;
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/tvattmedel_samling_md.png');
+                height: 25rem;
+            }
 
             @include media-breakpoint-up(lg) {
+                background-image: url('../img/Jula-kem/tvattmedel_samling.png');
                 height: 35rem;
             }
     }
 
     &--4 {
-        background-image: url('../img/Jula-fika/kakor_samling.png');
+        background-image: url('../img/Mobile-versions/kakor_samling_sm.png');
+        height: 11rem;
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/kakor_samling_md.png');
+                height: 25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/Jula-fika/kakor_samling.png');
+                height: 35rem;
+            }
     }
 
     &--5 {
-        background-image: url('../img/Transfest-kultur/transfest-kultur_poster.png');
+        background-image: url('../img/Mobile-versions/transfest-kultur_poster_sm.png');
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/transfest-kultur_poster_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/Transfest-kultur/transfest-kultur_poster.png');
+            }
     }
 
     &--6 {
-        background-image: url('../img/RFSL-komut/rfsl-komut_flyers01.png');
+        background-image: url('../img/Mobile-versions/rfsl-komut_flyers_sm.png');
+        height: 11rem;
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/rfsl-komut_flyers_md.png');
+                height: 25rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/RFSL-komut/rfsl-komut_flyers01.png');
+                height: 40rem;
+            }
     }
 
     &--7 {
-        background-image: url('../img/GRC-metod/grc_metod01.png');
-    }
-
-    &--8 {
-        background-image: url('../img/Stolta/stolta_screens01.png');
-    }
-
-    &--9 {
-        background-image: url('../img/Kollaboration/kollab_profil01.png');
-
-        @include media-breakpoint-up(xl) {
-            height: 55rem;
-        }
-    }
-
-    &--10 {
-        background-image: url('../img//Liloff/liloff_logo.png');
+        background-image: url('../img/Mobile-versions/grc_metod_sm.png');
+        height: 11rem;
 
         @include media-breakpoint-up(md) {
-            height: 20rem;
+            background-image: url('../img/Mobile-versions/grc_metod_md.png');
+            height: 25rem;
         }
 
         @include media-breakpoint-up(lg) {
-            height: 35rem;
+            background-image: url('../img/GRC-metod/grc_metod01.png');
+            height: 40rem;
         }
+    }
+
+    &--8 {
+        background-image: url('../img/Mobile-versions/stolta_screen_sm.png');
+
+        @include media-breakpoint-up(md) {
+            background-image: url('../img/Mobile-versions/stolta_screen_md.png');
+        }
+
+        @include media-breakpoint-up(lg) {
+            background-image: url('../img/Stolta/stolta_screens01.png');
+        }
+    }
+
+    &--9 {
+        background-image: url('../img/Mobile-versions/kollab_logotype_sm.png');
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/kollab_logotype_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/Kollaboration/kollab_logotype01.png');
+                height: 35rem;
+            }
+    }
+
+    &--10 {
+        background-image: url('../img/Mobile-versions/liloff_logo_sm.png');
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/liloff_logo_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img//Liloff/liloff_logo.png');
+            }
+    }
+
+    &--11 {
+        background-image: url('../img/Mobile-versions/majjo_visitkort_sm.png');
+
+            @include media-breakpoint-up(md) {
+                background-image: url('../img/Mobile-versions/majjo_visitkort_md.png');
+            }
+
+            @include media-breakpoint-up(lg) {
+                background-image: url('../img/Majjo/majjo_visitkort01.png');
+                height: 35rem;
+            }
     }
 
 }
@@ -135,7 +222,8 @@
 .grc__gallery,
 .stolta__gallery,
 .scenkonst__gallery,
-.liloff__gallery {
+.liloff__gallery,
+.majjo__gallery {
 
     display: grid;
     grid-template-columns: repeat(10, 1fr);
@@ -189,7 +277,8 @@
 .grc__img,
 .stolta__img,
 .scenkonst__img,
-.liloff__img {
+.liloff__img,
+.majjo__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -400,6 +489,9 @@
     &--8 {
         grid-column: 1/-1;
     }
+    &--9 {
+        grid-column: 1/-1;
+    }
 }
 
 .liloff__gallery {
@@ -416,5 +508,26 @@
         @include media-breakpoint-up(lg) {
             grid-column: 6/-1;
         }
+    }
+}
+
+.majjo__gallery {
+    &--1 {
+        grid-column: 1/-1;
+
+        @include media-breakpoint-up(lg) {
+            grid-column: 1/7;
+        }
+    }
+    &--2 {
+        grid-column: 1/-1;
+
+        @include media-breakpoint-up(lg) {
+            grid-column: 7/-1;
+        }
+    }
+
+    &--3 {
+        grid-column: 1/-1;
     }
 }
